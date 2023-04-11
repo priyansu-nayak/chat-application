@@ -4,14 +4,21 @@
   "description": "Chat Application built with ExpressJS and socket.io",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "nodemon index.js"
   },
   "author": "Priyansu Kumar Nayak",
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.6",
     "express": "^4.18.2",
+    "nodemon": "^2.0.22",
     "socket.io": "^4.6.1",
     "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.3.1"
   }
 }

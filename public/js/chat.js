@@ -2,6 +2,7 @@ let socket = io("/");
 
 let name = "";
 let roomId = "";
+let date = new Date()
 
 $(document).ready(function () {
     const queryString = window.location.search;
@@ -17,8 +18,8 @@ $(document).ready(function () {
 
 socket.on("user-connected", (name) => {
     let html = `
-    <div class="row">
-        <div class="col-12 col-md-12 col-lg-12">
+    <div class="ro">
+        <div class="d-flex justify-content-center">
         ${name} just joined the room!
         <div>
     <div>
@@ -37,9 +38,10 @@ $(".send-msg").click(function () {
         socket.emit("message", name, roomId, msg);
 
         let html = `
-        <div class="row">
+        <div class="row memsg">
             <div class="col-12 col-md-12 col-lg-12">
-                me:${msg}
+            ${date.toLocaleTimeString()}
+                Me: ${msg}
             </div>
         </div>
         `
@@ -63,7 +65,8 @@ socket.on("receive-msg", (userName, msg) => {
         let html = `
         <div class="row">
             <div class="col-12 col-md-12 col-lg-12">
-                ${userName}:${msg}
+            ${date.toLocaleTimeString()}
+                ${userName}: ${msg}
             </div>
         </div>
         `
