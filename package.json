@@ -1,0 +1,17 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "Chat Application built with ExpressJS and socket.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Priyansu Kumar Nayak",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.18.2",
+    "socket.io": "^4.6.1",
+    "uuid": "^9.0.0"
+  }
+}
