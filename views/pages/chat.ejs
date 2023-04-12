@@ -21,26 +21,29 @@
 </head>
 
 <body>
-    
 
-        <div class="container-fuild ">
-            <div class="row">
-                <div class="col-12 col-md-12 col-lg-12 pb-5" id="chat-area">
-                </div>
-    
+
+    <div class="container my-2 text-light">
+        <h1 class="heading my-3">Welcome to the Room</h1>
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-12 pb-5" id="chat-area">
+            </div>
+
+            <div class="msgbox">
+
                 <div class="col-10 col-md-11 col-lg-11 p-2" id="msg-area">
                     <input type="text" class="form-input chat-msg " id="chat-msg" placeholder="Enter your message">
-    
                 </div>
-    
+
                 <div class="col-2 col-md-1 col-lg-1 p-2">
-                    <button class="send-msg"><i class="fa-solid fa-paper-plane"></i></button>
+                    <button class="send-msg"><i class="fa-solid fa-paper-plane fa-lg"></i></button>
                 </div>
             </div>
         </div>
-    
-    
-    
+    </div>
+
+
+
     <!-- Socket.io -->
     <script src="/socket.io/socket.io.js"></script>
 
